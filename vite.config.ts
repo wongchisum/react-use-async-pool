@@ -10,10 +10,10 @@ export default defineConfig({
     // use vite library mode to build the package
     // https://vitejs.dev/guide/build.html#library-mode
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'MyLib',
+      entry: resolve(__dirname, 'src/hooks/index.ts'),
+      name: 'use-async-pool',
       // the proper extensions will be added
-      fileName: 'my-lib',
+      fileName: 'main',
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

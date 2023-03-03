@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-import { useAsyncPool } from "my-lib";
+import { useAsyncPool } from "react-use-async-pool";
 
 const request = async (id: number) => {
   const result = await fetch(`https://picsum.photos/id/${id}/info`);

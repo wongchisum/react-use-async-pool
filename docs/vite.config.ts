@@ -66,7 +66,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      'my-lib': path.join(__dirname, '../src'),
+      'react-use-async-pool': path.join(__dirname, '../src'),
     },
   },
 })

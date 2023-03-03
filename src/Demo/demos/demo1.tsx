@@ -5,7 +5,6 @@
  */
 
 import React, { useState } from "react";
-// import { useAsyncPool } from 'my-lib'
 
 const request = async (id: number) => {
   const result = await fetch(`https://picsum.photos/id/${id}/info`);

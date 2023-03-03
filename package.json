@@ -1,8 +1,11 @@
 {
-  "name": "library-demo",
-  "description": "suppose this npm package name is 'my-lib'",
-  "private": true,
-  "version": "0.0.3",
+  "name": "react-use-async-pool",
+  "description": "一个 react hook,支持控制异步函数的并发控制",
+  "version": "0.0.1",
+  "files": ["dist"],
+  "type":"module",
+  "main": "./dist/main.cjs",
+  "module": "./dist/main.js",
   "scripts": {
     "dev": "cross-env SHOW_ALL_COMPONENT_DEMOS=true && vite serve docs",
     "build-docs": "rimraf docs/dist && vite build docs",

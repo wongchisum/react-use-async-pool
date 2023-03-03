@@ -6,7 +6,7 @@
     "moduleResolution": "Node",
     "lib": ["ES2015","DOM"],
     "paths": {
-      "my-lib": ["./src"]
+      "react-use-async-pool": ["./src"]
     },
     "esModuleInterop": true
   }

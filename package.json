@@ -1,0 +1,30 @@
+{
+  "name": "library-demo",
+  "description": "suppose this npm package name is 'my-lib'",
+  "private": true,
+  "version": "0.0.3",
+  "scripts": {
+    "dev": "cross-env SHOW_ALL_COMPONENT_DEMOS=true && vite serve docs",
+    "build-docs": "rimraf docs/dist && vite build docs && serve -s docs/dist",
+    "ssr-docs": "rimraf docs/dist && vite-pages ssr docs && serve docs/dist",
+    "build-lib": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.5.0"
+  },
+  "devDependencies": {
+    "@mdx-js/react": "^2.2.1",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@types/node": "^18.11.16",
+    "@types/react": "^18.0.26",
+    "@vitejs/plugin-react": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2",
+    "serve": "^14.1.2",
+    "vite": "^4.0.1",
+    "vite-pages-theme-doc": "^4.0.0",
+    "vite-plugin-react-pages": "^4.0.0"
+  }
+}

@@ -29,8 +29,11 @@ export function useAsyncPool<T = unknown, U = unknown>(
 
   // 点击执行
   const handleRun = () => {
-    setData([]);
-    setLoading(true);
+    if (!loading) {
+      setTaskIndex(0);
+      setData([]);
+      setLoading(true);
+    }
   };
 
   // 计算剩余数量

@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
-import type { IHookReturn, IOptions } from "./typing";
+import { useEffect, useState } from 'react';
+import type { IHookReturn, IOptions } from './typing';
 
-export function useAsyncPool<T = unknown, U = unknown>(
-  options: IOptions<T, U>
-): IHookReturn<U> {
+export function useAsyncPool<T = unknown, U = unknown>(options: IOptions<T, U>): IHookReturn<U> {
   const { list = [], fn = () => {}, limit = 1 } = options;
 
   const [data, setData] = useState<U[]>([]); // Promise运行后的数据
@@ -16,7 +14,7 @@ export function useAsyncPool<T = unknown, U = unknown>(
     const tasks = [...list].splice(taskIndex, limit);
 
     // 构造Promise.all,进行并发请求
-    const result = (await Promise.all(tasks.map((task) => fn(task)))) as U[];
+    const result = (await Promise.all(tasks.map(task => fn(task)))) as U[];
 
     // 更新数据
     await setData((total: U[]) => {

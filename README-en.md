@@ -2,38 +2,42 @@
 
 [![npm version](https://badge.fury.io/js/react-use-async-pool.svg)](https://badge.fury.io/js/react-use-async-pool)
 
-简体中文 | <a href="https://github.com/TonicFizzRicky/react-use-async-pool/blob/master/README-en.md">英文</a>
+English | <a href="https://github.com/TonicFizzRicky/react-use-async-pool/blob/master/README.md">Simplified Chinese</a>
 
 [![NPM](https://nodei.co/npm/react-use-async-pool.png)](https://nodei.co/npm/react-use-async-pool/)
 
-`react-use-async-pool` 是一个 react hook,支持对异步函数进行并发控制
+This is a react hook called `react-use-async-pool`.
 
-主要解决 `Promise.all` 在并发大量请求时，无法限制并发数的缺陷
+You can use it to control asynchronous request in your application.
 
-以及 `Promise.all` 无法获取当前异步请求进度
+When we use `Promise.all` for requesting asynchronous functions.We can't setting concurrency.
+
+Also,we can know how many asynchronous functions have been resolved.
+
+So I created `react-use-async-pool` to solve these problems.
 
 ---
 
-## 文档
+## Document
 
  https://react-use-async-pool.netlify.app/
 
-## 示例
+## Example
 
  https://stackblitz.com/edit/react-use-async-pool-demo?file=src%2FApp.tsx
 
 ---
-## 使用
+## Use
 
-### 安装依赖
+### Install Dependency
 
 ```bash
 pnpm i react-use-async-pool
 ```
 
-### 在 React 中使用
+### Using in React 
 
-通过 ESM 方式导入
+import `react-use-async-pool` by ES Module
 
 ```ts
 import React from "react";
@@ -51,9 +55,9 @@ const randomIdList = Array.from({ length: 20 }, () =>
 
 const Demo = () => {
   const { run, loading, data } = useAsyncPool({
-    list: randomIdList, // 数组，参数列表
-    fn: request, // 需要发起异步请求的函数
-    limit: 2, // 限制并发的请求数位 2
+    list: randomIdList, // your array list within arguments,will passed into asynchronous function
+    fn: request, // your asynchronous function
+    limit: 2, // your maximum concurrency
   });
 
   return (
@@ -66,7 +70,7 @@ const Demo = () => {
       </div>
       <div>
         <button disabled={loading} onClick={run}>
-          {loading ? "加载中..." : "发起请求"}
+          {loading ? "Loading..." : "Request!"}
         </button>
       </div>
     </div>
@@ -77,35 +81,37 @@ export default Demo;
 ```
 
 ---
-## 开发
+## Development
 
-你可以 Fork 此仓库进行开发
+You can `Fork` this repository to secondary development.
 
-Fork 后可以安装依赖
+After forked and cloned repository,install project dependencies.
+
+I recommend to use `pnpm` to manage your frontend dependencies.
 
 ```bash
 pnpm i
 ```
 
-启动本地开发环境
+Use this command to run a local server.
 
 ```bash
 pnpm dev
 ```
 
-打包文档
+Build your documents
 
 ```bash
 pnpm build-docs
 ```
 
-打包为 ssr 静态站点
+Build a server-side-render site.
 
 ```bash
 pnpm ssr-docs
 ```
 
-打包库
+Build this package
 ```bash
 pnpm build-lib
 ```
@@ -113,6 +119,6 @@ pnpm build-lib
 
 ---
 
-## 致谢
+## Appreciate
 
-站点生成: [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages)
+Document site generate: [vite-plugin-react-pages](https://github.com/vitejs/vite-plugin-react-pages)

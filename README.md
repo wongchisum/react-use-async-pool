@@ -1,10 +1,8 @@
 # react-use-async-pool
 
-[![npm version](https://badge.fury.io/js/react-use-async-pool.svg)](https://badge.fury.io/js/react-use-async-pool)
+[![npm version](https://badge.fury.io/js/react-use-async-pool.svg)](https://badge.fury.io/js/react-use-async-pool)  ![CI](https://github.com/TonicFizzRicky/react-use-async-pool/actions/workflows/node.js.yml/badge.svg)
 
 简体中文 | <a href="https://github.com/TonicFizzRicky/react-use-async-pool/blob/master/README-en.md">英文</a>
-
-[![NPM](https://nodei.co/npm/react-use-async-pool.png)](https://nodei.co/npm/react-use-async-pool/)
 
 `react-use-async-pool` 是一个 react hook,支持对异步函数进行并发控制
 

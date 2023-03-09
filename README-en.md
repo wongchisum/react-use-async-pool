@@ -1,10 +1,8 @@
 # react-use-async-pool
 
-[![npm version](https://badge.fury.io/js/react-use-async-pool.svg)](https://badge.fury.io/js/react-use-async-pool)
+[![npm version](https://badge.fury.io/js/react-use-async-pool.svg)](https://badge.fury.io/js/react-use-async-pool)  ![CI](https://github.com/TonicFizzRicky/react-use-async-pool/actions/workflows/node.js.yml/badge.svg)
 
 English | <a href="https://github.com/TonicFizzRicky/react-use-async-pool/blob/master/README.md">Simplified Chinese</a>
-
-[![NPM](https://nodei.co/npm/react-use-async-pool.png)](https://nodei.co/npm/react-use-async-pool/)
 
 This is a react hook called `react-use-async-pool`.
 

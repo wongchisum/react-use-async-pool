@@ -23,7 +23,7 @@ export interface IOptions<T = unknown, U = unknown> {
  * useAsyncPool 返回值
  */
 export interface IHookReturn<U = unknown> {
-   /**
+  /**
    * 手动触发请求的函数
    */
   run: () => void;

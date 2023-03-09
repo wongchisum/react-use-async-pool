@@ -1,1 +1,1 @@
-export {useAsyncPool} from './hooks'
+export { useAsyncPool } from './hooks';

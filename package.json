@@ -1,7 +1,7 @@
 {
   "name": "react-use-async-pool",
   "description": "一个 react hook,支持控制异步函数的并发数",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "files": [
     "dist"
   ],
@@ -26,7 +26,7 @@
     "prepare": "npx husky install",
     "dev": "cross-env SHOW_ALL_COMPONENT_DEMOS=true && vite serve docs",
     "lint": "eslint --fix && prettier --ignore-path .gitignore --check --write src/**/*.ts",
-    "staged": "npx ",
+    "staged": "npx lint-staged",
     "commit": "npx cz",
     "test": "vitest run",
     "test-dev":"vitest",

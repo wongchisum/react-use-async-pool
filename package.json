@@ -1,15 +1,17 @@
 {
   "name": "react-use-async-pool",
-  "description": "一个 react hook,支持控制异步函数的并发控制",
-  "version": "0.0.2",
-  "files": ["dist"],
-  "type":"module",
+  "description": "一个 react hook,支持控制异步函数的并发数",
+  "version": "0.0.3",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
   "main": "./dist/main.cjs",
   "module": "./dist/main.js",
   "scripts": {
     "dev": "cross-env SHOW_ALL_COMPONENT_DEMOS=true && vite serve docs",
     "build-docs": "rimraf docs/dist && vite build docs",
-    "serve":"serve -s docs/dist",
+    "serve": "serve -s docs/dist",
     "ssr-docs": "rimraf docs/dist && vite-pages ssr docs && serve docs/dist",
     "build-lib": "vite build"
   },
@@ -30,5 +32,23 @@
     "vite": "^4.0.1",
     "vite-pages-theme-doc": "^4.0.0",
     "vite-plugin-react-pages": "^4.0.0"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "concurrency",
+    "asynchronous"
+  ],
+  "bugs": {
+    "url": "https://github.com/TonicFizzRicky/react-use-async-pool/issues"
+  },
+  "author": {
+    "name": "wongchisum",
+    "email": "im.wongch1sum@gmail.com",
+    "url": "https://wong1997.netlify.app/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TonicFizzRicky/react-use-async-pool.git"
   }
 }

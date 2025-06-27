@@ -14,6 +14,8 @@ Also,we can know how many asynchronous functions have been resolved.
 
 So I created `react-use-async-pool` to solve these problems.
 
+DeepWiki:https://deepwiki.com/wongchisum/react-use-async-pool
+
 ---
 
 ## Document

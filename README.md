@@ -10,6 +10,8 @@
 
 以及 `Promise.all` 无法获取当前异步请求进度
 
+DeepWiki: https://deepwiki.com/wongchisum/react-use-async-pool
+
 ---
 
 ## 文档
